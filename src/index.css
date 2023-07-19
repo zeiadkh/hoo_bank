@@ -63,8 +63,21 @@
 .bg-discount-gradient {
     background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
 }
-
-
+.bg-testmonials-gradient {
+    border-radius: 12.5rem;
+    background: linear-gradient(90deg, #1A2980 0%, #26D0CE 100%);
+    filter: blur(325px);
+}
+.bg-control-gradient{
+    border-radius: 29.4375rem;
+    background: rgba(255, 255, 255, 0.60);
+    filter: blur(375px);
+}
+.bg-hero-gradient{
+    border-radius: 20.25rem;
+    background: #FFF;
+    filter: blur(225px);
+}
 
 .box-shadow {
     box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
@@ -148,4 +161,17 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.text-balance{
+    text-wrap: balance
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #26D0CE;
+}
+::-webkit-scrollbar-thumb{
+    width: 3px;
+    background-color: #214d76;
+    border-radius: 4px;
 }

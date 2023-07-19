@@ -13,7 +13,7 @@ const Navbar = () => {
         <ul className="hidden gap-4 font-poppins text-white sm:flex">
           {navLinks.map((navLink) => (
             <li key={navLink.id} className="hover:text-discount">
-              <a href={`#${navLink.title}`}>{navLink.title}</a>
+              <a href={`#${navLink.id}`}>{navLink.title}</a>
             </li>
           ))}
         </ul>
@@ -35,7 +35,7 @@ const Navbar = () => {
             <ul className="flex gap-4 font-poppins text-white flex-col bg-gray-gradient sidebar w-auto px-6 py-4 rounded-lg mt-4">
               {navLinks.map((navLink) => (
                 <li key={navLink.id} className="hover:text-discount">
-                  <a href={`#${navLink.title}}`}>{navLink.title}</a>
+                  <a href={`#${navLink.id}`}>{navLink.title}</a>
                 </li>
               ))}
             </ul>
