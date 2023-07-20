@@ -2,9 +2,16 @@ import styles,{layout} from "../style";
 import {bill, apple, google} from "../assets";
 const Billing = () => {
   return (
-    <section  className={`${layout.sectionReverse} ${styles.padding} gap-12 relative`}>
+    <section
+      className={`${layout.sectionReverse} ${styles.padding} gap-12 relative`}
+    >
       <div className={`${layout.sectionImg}`}>
-        <img src={bill} alt="bill" />
+        <img
+          src={bill}
+          alt="bill"
+          className="w-[100%] h-[100%]"
+          loading="lazy"
+        />
       </div>
 
       <div className={`flex-1 flex flex-col gap-6`}>
@@ -21,17 +28,21 @@ const Billing = () => {
             src={apple}
             alt="apple"
             aria-roledescription="download-apps tore"
-            className="cursor-pointer"
+            className="cursor-pointer w-[100%] h-[100%]"
+            loading="lazy"
           />
           <img
             src={google}
             alt="google"
             aria-roledescription="download-google play"
-            className="cursor-pointer"
+            className="cursor-pointer w-[100%] h-[100%]"
+            loading="lazy"
           />
         </div>
       </div>
-      <div className={`absolute w-[20%] h-[100%] bg-control-gradient z-0 left-0 top-0`}></div>
+      <div
+        className={`absolute w-[20%] h-[100%] bg-control-gradient z-0 left-0 top-0`}
+      ></div>
     </section>
   );
 }

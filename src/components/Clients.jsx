@@ -2,11 +2,14 @@ import {clients} from '../constants'
 import styles,{ layout } from '../style'
 const Clients = () => {
   return (
-    <div className={`${layout.section} gap-[6.25rem] ${styles.paddingX} mb-8 mt-[-6rem]`}>
+    <div
+      className={`${layout.section} gap-[6.25rem] ${styles.paddingX} mb-8 mt-[-6rem]`}
+    >
       {clients.map((client, index) => (
         <div key={index} className={`${layout.sectionImg} `}>
           <img
-            
+            className="w-[100%] h-[100%]"
+            loading="lazy"
             src={client.logo}
             alt={client.logo}
             key={client.id}

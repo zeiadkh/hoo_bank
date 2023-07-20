@@ -9,7 +9,12 @@ const Navbar = () => {
       <nav
         className={`w-full flex justify-between	${styles.paddingX} sticky z-[6]`}
       >
-        <img src={logo} alt="logo" className="w-[82px] h-[23px]" />
+        <img
+          src={logo}
+          alt="logo"
+          className="w-[82px] h-[23px]"
+          loading="lazy"
+        />
         <ul className="hidden gap-4 font-poppins text-white sm:flex">
           {navLinks.map((navLink) => (
             <li key={navLink.id} className="hover:text-discount">
@@ -25,7 +30,8 @@ const Navbar = () => {
             onClick={() => setToggle((prev) => !prev)}
           >
             <img
-              className=""
+              className="w-[100%] h-[100%]"
+              loading="lazy"
               src={toggle ? close : menu}
               alt={toggle ? "close-menu" : "open-menu"}
             />

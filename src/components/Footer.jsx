@@ -9,7 +9,12 @@ const Footer = () => {
         className={`flex sm:pt-20 pt-8 justify-between gap-12 border-b border-[#3F3E45] flex-wrap flex-col md:flex-row pb-6 `}
       >
         <div className="flex-[2]">
-          <img src={logo} alt="logo" />
+          <img
+            src={logo}
+            alt="logo"
+            className="w-[100%] h-[100%]"
+            loading="lazy"
+          />
           <p className={`${styles.paragraph} mt-8`}>
             A new way to make the payments easy, reliable and secure.
           </p>
@@ -40,7 +45,12 @@ const Footer = () => {
           {socialMedia.map((app) => (
             <li key={app.id}>
               <a href={app.link} rel="noreferrer" target="_blank">
-                <img src={app.icon} alt={`${app.id}`} />
+                <img
+                  src={app.icon}
+                  alt={`${app.id}`}
+                  className="w-[100%] h-[100%]"
+                  loading="lazy"
+                />
               </a>
             </li>
           ))}

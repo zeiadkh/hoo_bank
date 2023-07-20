@@ -11,7 +11,12 @@ const Hero = () => {
       <div className={`flex ${layout.section} gap-16`}>
         <div className="flex-1">
           <div className="flex bg-discount-gradient gap-3 w-fit px-4 rounded-lg py-1 items-center">
-            <img src={discount} alt="discount-logo"></img>
+            <img
+              src={discount}
+              alt="discount-logo"
+              className="w-[100%] h-[100%]"
+              loading="lazy"
+            ></img>
             <p className="text-discount">
               <span className="text-white">20%</span> Discount For{" "}
               <span className="text-white">1 Month</span> Account
@@ -35,7 +40,8 @@ const Hero = () => {
         </div>
         <div className="sm:mr-[-8rem] mr-[-3rem] ">
           <img
-            className="block z-[5] relative"
+            loading="lazy"
+            className="block z-[5] relative w-[100%] h-[100%]"
             src={
               "https://ik.imagekit.io/3e6idanej/robot.png?updatedAt=1689616134527"
             }
@@ -62,7 +68,9 @@ const Hero = () => {
           );
         })}
       </div>
-      <div className={`absolute w-[10%] h-[50%] bg-hero-gradient z-0 left-0 top-[0]`}></div>
+      <div
+        className={`absolute w-[10%] h-[50%] bg-hero-gradient z-0 left-0 top-[0]`}
+      ></div>
     </section>
   );
 }

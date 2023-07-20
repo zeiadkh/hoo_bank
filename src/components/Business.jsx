@@ -3,9 +3,18 @@ import styles,{layout} from "../style"
 import Button from "./Button";
 
 const Feature = ({ icon, title, content, index }) => (
-  <div className={`flex gap-8 items-center text-white ${index < features.length - 1 ?"mb-6" :'' } feature-card p-4 rounded-[18px] sm:flex-row flex-col`}>
+  <div
+    className={`flex gap-8 items-center text-white ${
+      index < features.length - 1 ? "mb-6" : ""
+    } feature-card p-4 rounded-[18px] sm:flex-row flex-col`}
+  >
     <div className="icon p-4 rounded-full bg-dimBlue ">
-      <img src={icon} alt={`${icon}`} />
+      <img
+        src={icon}
+        alt={`${icon}`}
+        className="w-[100%] h-[100%]"
+        loading="lazy"
+      />
     </div>
     <div className="content">
       <h3 className="font-semibold text-[18px]">{title}</h3>

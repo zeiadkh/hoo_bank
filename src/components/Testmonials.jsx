@@ -5,7 +5,7 @@ const Card = ({ content, name, title, img }) => (
     <span className={`text-gradient text-[100px] h-[80px]`}>&ldquo; {" "}</span>
     <p className="text-white font-poppins text-[18px]">{content}</p>
     <div className="flex gap-6 flex-wrap">
-      <img src={img} alt={`${img}`} className="w-12 h-12" />
+      <img src={img} alt={`${img}`} className="w-12 h-12" loading="lazy"/>
       <div>
         <span className="block text-white text-[20px] font-poppins">{name}</span>
         <span className={`${styles.paragraph} text-[16px]`}>{title}</span>

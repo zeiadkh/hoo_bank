@@ -20,7 +20,12 @@ const Card = () => {
         <Button />
       </div>
       <div className={`${layout.sectionImg}`}>
-        <img src={`${card}`} alt="" />
+        <img
+          src={`${card}`}
+          alt="card"
+          className="w-[100%] h-[100%]"
+          loading="lazy"
+        />
       </div>
     </section>
   );
