@@ -8,7 +8,7 @@ const Clients = () => {
       {clients.map((client, index) => (
         <div key={index} className={`${layout.sectionImg} `}>
           <img
-            className="w-[100%] h-[100%]"
+            className="max-w-[100%]"
             loading="lazy"
             src={client.logo}
             alt={client.logo}

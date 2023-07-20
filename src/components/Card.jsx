@@ -23,7 +23,7 @@ const Card = () => {
         <img
           src={`${card}`}
           alt="card"
-          className="w-[100%] h-[100%]"
+          className="max-w-[100%]"
           loading="lazy"
         />
       </div>

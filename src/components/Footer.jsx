@@ -12,7 +12,7 @@ const Footer = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-[100%] h-[100%]"
+            className="max-w-[100%]"
             loading="lazy"
           />
           <p className={`${styles.paragraph} mt-8`}>
@@ -48,7 +48,7 @@ const Footer = () => {
                 <img
                   src={app.icon}
                   alt={`${app.id}`}
-                  className="w-[100%] h-[100%]"
+                  className="max-w-[100%]"
                   loading="lazy"
                 />
               </a>

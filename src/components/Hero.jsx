@@ -14,7 +14,7 @@ const Hero = () => {
             <img
               src={discount}
               alt="discount-logo"
-              className="w-[100%] h-[100%]"
+              className="max-w-[100%]"
               loading="lazy"
             ></img>
             <p className="text-discount">
@@ -41,7 +41,7 @@ const Hero = () => {
         <div className="sm:mr-[-8rem] mr-[-3rem] ">
           <img
             loading="lazy"
-            className="block z-[5] relative w-[100%] h-[100%]"
+            className="block z-[5] relative max-w-[100%]"
             src={
               "https://ik.imagekit.io/3e6idanej/robot.png?updatedAt=1689616134527"
             }
