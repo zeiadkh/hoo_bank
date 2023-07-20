@@ -12,7 +12,7 @@ const Feature = ({ icon, title, content, index }) => (
       <img
         src={icon}
         alt={`${icon}`}
-        className="max-w-[100%]"
+        className="max-w-[100%] h-auto"
         loading="lazy"
       />
     </div>

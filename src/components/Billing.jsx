@@ -9,7 +9,7 @@ const Billing = () => {
         <img
           src={bill}
           alt="bill"
-          className="max-w-[100%] "
+          className="max-w-[100%] h-auto"
           loading="lazy"
         />
       </div>
@@ -28,14 +28,14 @@ const Billing = () => {
             src={apple}
             alt="apple"
             aria-roledescription="download-apps tore"
-            className="cursor-pointer max-w-[100%]"
+            className="cursor-pointer max-w-[100%] h-auto"
             loading="lazy"
           />
           <img
             src={google}
             alt="google"
             aria-roledescription="download-google play"
-            className="cursor-pointer max-w-[100%]"
+            className="cursor-pointer max-w-[100%] h-auto"
             loading="lazy"
           />
         </div>

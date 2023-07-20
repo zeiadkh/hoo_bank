@@ -12,7 +12,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="logo"
-          className="max-w-[82px]"
+          className="max-w-[82px] h-auto"
           loading="lazy"
         />
         <ul className="hidden gap-4 font-poppins text-white sm:flex">
@@ -30,7 +30,7 @@ const Navbar = () => {
             onClick={() => setToggle((prev) => !prev)}
           >
             <img
-              className="max-w-[100%]"
+              className="max-w-[100%] h-auto"
               loading="lazy"
               src={toggle ? close : menu}
               alt={toggle ? "close-menu" : "open-menu"}

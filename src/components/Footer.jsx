@@ -48,8 +48,8 @@ const Footer = () => {
                 <img
                   src={app.icon}
                   alt={`${app.id}`}
-                  className="max-w-[100%]"
                   loading="lazy"
+                  className="max-w-[100%] h-auto"
                 />
               </a>
             </li>
