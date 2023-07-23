@@ -1,5 +1,4 @@
 
-
 const Stat = ({value, title})=>(
         
     <div className="flex w-[270px] flex-1 items-center gap-6 ">
