@@ -174,3 +174,6 @@
     background-color: #214d76;
     border-radius: 4px;
 }
+img{
+    max-width: 100%;
+}
