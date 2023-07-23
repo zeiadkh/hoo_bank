@@ -21,9 +21,9 @@ const Footer = () => {
         </div>
         {footerLinks.map((list, index) => (
           <div key={index} className="flex-1">
-            <h4 className="text-white font-medium text-[18px] mb-6">
+            <h3 className="text-white font-medium text-[18px] mb-6">
               {list.title}
-            </h4>
+            </h3>
             <ul>
               {list.links.map((link) => (
                 <li
