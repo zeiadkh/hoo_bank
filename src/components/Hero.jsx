@@ -1,8 +1,8 @@
-// import React from 'react'
 import { discount} from "../assets"
 import styles, { layout } from "../style";
-import {stats} from "../constants"
+import Stat from "./Stat";
 import GetStarted from "./GetStarted";
+import { stats } from "../constants";
 
 
 const Hero = () => {
@@ -54,19 +54,9 @@ const Hero = () => {
       </div>
 
       <div className={` sm:justify-between ${layout.section} items-center`}>
-        {stats.map((stat) => {
-          return (
-            <div
-              key={stat.id}
-              className="flex gap-6 items-center flex-1 w-[270px] "
-            >
-              <strong className="text-white sm:text-[42px] text-[32px] ">
-                {stat.value}
-              </strong>
-              <span className="text-gradient lg:relative">{stat.title}</span>
-            </div>
-          );
-        })}
+        {stats.map(stat => <Stat key={stat.id} {...stat}/>
+          
+        )}
       </div>
       <div
         className={`absolute w-[10%] h-[50%] bg-hero-gradient z-0 left-0 top-[0]`}
